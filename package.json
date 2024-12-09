@@ -1,12 +1,15 @@
 {
-  "name": "vue3-popper",
-  "version": "1.4.2",
+  "name": "@fifteen/vue3-popper",
+  "version": "1.4.2-fifteen.1",
   "author": {
     "name": "Valgeir Björnsson",
     "email": "valgeir@hey.com",
     "url": "https://github.com/valgeirb"
   },
-  "repository": "github:valgeirb/vue3-popper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birotaio/vue3-popper.git"
+  },
   "homepage": "https://valgeirb.github.io/vue3-popper",
   "license": "MIT",
   "description": "A Vue 3 popper component. Uses PopperJS v2.",
