@@ -21,10 +21,19 @@
     "popper-2",
     "vue-3-popper-2"
   ],
-  "main": "dist/popper.ssr.js",
-  "browser": "dist/popper.esm.js",
-  "module": "dist/popper.esm.js",
-  "unpkg": "dist/popper.min.js",
+  "main": "./dist/popper.ssr.js",
+  "browser": "./dist/popper.esm.js",
+  "module": "./dist/popper.esm.js",
+  "unpkg": "./dist/popper.min.js",
+  "exports": {
+    ".": {
+      "default": {
+        "import": "./dist/popper.esm.js",
+        "require": "./dist/popper.min.js",
+        "types": "./index.d.ts"
+      }
+    }
+  },
   "files": [
     "dist/*",
     "src/**/*.vue",
