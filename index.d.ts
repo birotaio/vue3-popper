@@ -1,22 +1,22 @@
-import { DefineComponent } from "vue";
+import { DefineComponent } from 'vue';
 
 declare interface Props {
   placement?:
-    | "auto"
-    | "auto-start"
-    | "auto-end"
-    | "top"
-    | "top-start"
-    | "top-end"
-    | "bottom"
-    | "bottom-start"
-    | "bottom-end"
-    | "right"
-    | "right-start"
-    | "right-end"
-    | "left"
-    | "left-start"
-    | "left-end";
+    | 'auto'
+    | 'auto-start'
+    | 'auto-end'
+    | 'top'
+    | 'top-start'
+    | 'top-end'
+    | 'bottom'
+    | 'bottom-start'
+    | 'bottom-end'
+    | 'right'
+    | 'right-start'
+    | 'right-end'
+    | 'left'
+    | 'left-start'
+    | 'left-end';
   disableClickAway?: boolean;
   offsetSkid?: string;
   offsetDistance?: string;
@@ -31,9 +31,9 @@ declare interface Props {
   interactive?: boolean;
   locked?: boolean;
   content?: string;
-  strategy?: "absolute" | "fixed";
-  "onOpen:popper"?: () => void;
-  "onClose:popper"?: () => void;
+  strategy?: 'absolute' | 'fixed';
+  'onOpen:popper'?: () => void;
+  'onClose:popper'?: () => void;
 }
 
 declare const Popper: DefineComponent<Props>;

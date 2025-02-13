@@ -1,19 +1,17 @@
-import component from "@/component/Popper.vue";
+import component from '@/components/Popper.vue';
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
 // to be registered via Vue.use() as well as Vue.component(),
-export default /*#__PURE__*/ (() => {
+export default (() => {
   // Get component instance
   const installable = component;
 
+  console.log('YOLO POPPERS');
+
   // Attach install function executed by Vue.use()
   installable.install = app => {
-    app.component("Popper", installable);
+    app.component('Popper', installable);
   };
   return installable;
 })();
-
-// It's possible to expose named exports when writing components that can
-// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';
-// export const RollupDemoDirective = directive;
